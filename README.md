@@ -35,9 +35,22 @@ pip install -r requirements.txt
 - `data/` - This folder holds the PDF files (e.g., `a1.pdf`, `a2.pdf`) that will be processed.
 - `output/` - Stores the embeddings and any generated answers or summaries.
 - `src/` - Contains Jupyter notebooks for each core step of the RAG pipeline:
-  - **`text_extraction.ipynb`**: Extracts text from PDF files using PyMuPDF.
-  - **`embedding.ipynb`**: Generates text embeddings using Sentence-Transformer.
-  - **`retrieval.ipynb`**: Implements FAISS-based retrieval of relevant document chunks.
-  - **`generation.ipynb`**: Generates answers using GPT-2 based on retrieved chunks.
+  - **`rag_for_biomass.ipynb`**: Extracts text from PDF files using PyMuPDF.  Generates text embeddings using Sentence-Transformer. Implements FAISS-based retrieval of relevant document chunks. Generates answers using GPT-2 based on retrieved chunks.
 - `requirements.txt` - Lists all required Python libraries. Install them using `pip`.
-- `run.py` - Main script to execute the RAG system.
+
+
+## Requirements
+
+The following dependencies are required to run this project:
+
+- **PyMuPDF**: For PDF text extraction.
+- **Sentence-Transformer**: For generating embeddings.
+- **FAISS**: For efficient similarity search and retrieval.
+- **transformers**: For GPT-2 model used in answer generation.
+- **torch**: For running deep learning models.
+
+You can install all required libraries by running:
+
+```bash
+pip install -r requirements.txt
+
