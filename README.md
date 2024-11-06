@@ -7,24 +7,6 @@ This repository implements a **Retrieval-Augmented Generation (RAG)** system des
 
 The system focuses on extracting and processing text from PDFs, embedding the text into vectors, retrieving relevant document chunks with FAISS, and using a GPT-2 model for answer generation.
 
-## Prerequisites
-
-Before running the code, make sure you have the following:
-
-- Python 3.6+
-- PyTorch 1.8+
-- FAISS
-- Sentence-Transformers
-- Transformers
-- PyMuPDF
-- NLTK
-
-### Install dependencies
-
-You can install the required libraries using:
-
-pip install -r requirements.txt
-
 
 ## Project Structure
 - `data/` - This folder holds the PDF files (e.g., `a1.pdf`, `a2.pdf`) that will be processed.
@@ -34,18 +16,23 @@ pip install -r requirements.txt
 - `requirements.txt` - Lists all required Python libraries. Install them using `pip`.
 
 
-## Requirements
 
-The following dependencies are required to run this project:
+## Prerequisites and Requirements
 
+Before running the code, make sure you have the following:
 - **PyMuPDF**: For PDF text extraction.
 - **Sentence-Transformer**: For generating embeddings.
 - **FAISS**: For efficient similarity search and retrieval.
 - **transformers**: For GPT-2 model used in answer generation.
 - **torch**: For running deep learning models.
 
-You can install all required libraries by running:
+- 
+### Install dependencies
 
-```bash
+You can install the required libraries using:
 pip install -r requirements.txt
+
+
+
+
 
