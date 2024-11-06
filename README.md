@@ -15,18 +15,17 @@ The system focuses on extracting and processing text from PDFs, embedding the te
   - **`rag_for_biomass.ipynb`**: Extracts text from PDF files using PyMuPDF.  Generates text embeddings using Sentence-Transformer. Implements FAISS-based retrieval of relevant document chunks. Generates answers using GPT-2 based on retrieved chunks.
 - `requirements.txt` - Lists all required Python libraries. Install them using `pip`.
 
-
-
 ## Prerequisites and Requirements
 
 Before running the code, make sure you have the following:
-- **PyMuPDF**: For PDF text extraction.
-- **Sentence-Transformer**: For generating embeddings.
-- **FAISS**: For efficient similarity search and retrieval.
-- **transformers**: For GPT-2 model used in answer generation.
-- **torch**: For running deep learning models.
 
-- 
+- **Python**: Version 3.6 to 3.10 (compatible with faiss-gpu).
+- **PyMuPDF**: For efficient PDF text extraction.
+- **Sentence-Transformers**: For generating sentence embeddings using the all-MiniLM-L6-v2 model.
+- **FAISS**: For efficient similarity search and retrieval.
+- **Transformers**: For natural language processing tasks using GPT2LMHeadModel and GPT2Tokenizer for answer generation.
+
+
 ### Install dependencies
 
 You can install the required libraries using:
