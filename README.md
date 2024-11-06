@@ -1,6 +1,6 @@
 # RAG System for PDF Processing
 
-This project implements a **Retrieval-Augmented Generation (RAG)** system for processing scientific PDF articles. The system extracts text from PDFs, generates embeddings, retrieves relevant document chunks using FAISS, and generates answers or summaries using GPT-2.
+This project implements a **Retrieval-Augmented Generation (RAG)** system for processing scientific PDF articles. The system extracts text from PDFs, generates embeddings, retrieves relevant document chunks, and generates answers or summaries using GPT-2.
 
 
 
