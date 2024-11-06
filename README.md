@@ -1,5 +1,7 @@
-# RAG_for_scientific_Articles
-Rag tutorial how to make chatbot for bioeconomy articles
+# RAG System for PDF Processing
+
+This project implements a **Retrieval-Augmented Generation (RAG)** system for processing scientific PDF articles. The system extracts text from PDFs, generates embeddings, retrieves relevant document chunks using FAISS, and generates answers or summaries using GPT-2.
+
 
 
 # Retrieval-Augmented Generation (RAG) System for Scientific Articles
@@ -27,3 +29,15 @@ Before running the code, make sure you have the following:
 You can install the required libraries using:
 
 pip install -r requirements.txt
+
+
+## Project Structure
+- `data/` - This folder holds the PDF files (e.g., `a1.pdf`, `a2.pdf`) that will be processed.
+- `output/` - Stores the embeddings and any generated answers or summaries.
+- `src/` - Contains Jupyter notebooks for each core step of the RAG pipeline:
+  - **`text_extraction.ipynb`**: Extracts text from PDF files using PyMuPDF.
+  - **`embedding.ipynb`**: Generates text embeddings using Sentence-Transformer.
+  - **`retrieval.ipynb`**: Implements FAISS-based retrieval of relevant document chunks.
+  - **`generation.ipynb`**: Generates answers using GPT-2 based on retrieved chunks.
+- `requirements.txt` - Lists all required Python libraries. Install them using `pip`.
+- `run.py` - Main script to execute the RAG system.
