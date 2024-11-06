@@ -1,0 +1,8 @@
+PyMuPDF==1.21.1
+sentence-transformers==2.2.2
+faiss-cpu==1.7.3  # or faiss-gpu if you're using a GPU
+transformers==4.30.0
+torch==1.13.1  # This version is compatible with GPT-2
+numpy==1.24.2  # FAISS and other dependencies require this
+scipy==1.10.1  # For some scientific computing needs in embeddings and FAISS
+pandas==1.5.3  # For handling any data processing needs (optional, but useful)
